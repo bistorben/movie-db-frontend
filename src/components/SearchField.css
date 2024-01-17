@@ -1,0 +1,9 @@
+.SearchField {
+  display: grid;
+  place-items: center;
+
+  padding: 2rem;
+  & input {
+    padding: 0.5rem 2rem;
+  }
+}
