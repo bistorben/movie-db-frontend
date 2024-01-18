@@ -1,9 +1,11 @@
 import "./MovieItem.css";
 
-const MovieItem = () => {
+const MovieItem = ({ title, poster, plot }) => {
   return (
     <section className="MovieItem">
-      <div></div>
+      <h3>{title}</h3>
+      <img src={poster} alt="" />
+      <p>{plot}</p>
     </section>
   );
 };

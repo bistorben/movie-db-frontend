@@ -1,5 +1,13 @@
 .MovieItem {
-  width: 200px;
-  height: 250px;
-  background-color: lightcoral;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 250px;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 10px;
+
+  & img {
+    width: 100%;
+  }
 }

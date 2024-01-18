@@ -1,11 +1,13 @@
 import MovieItem from "./MovieItem.jsx";
 import "./MovieList.css";
 
-const MovieList = () => {
+const MovieList = ({ movies }) => {
   return (
-    <>
-      <MovieItem />
-    </>
+    <section className="MovieList">
+      {movies.map((movie) => (
+        <MovieItem key={movie._id} {...movie} />
+      ))}
+    </section>
   );
 };
 
